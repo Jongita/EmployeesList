@@ -54,7 +54,7 @@ const server = http_1.default.createServer((req, res) => {
                 let rows = "";
                 result.forEach((e) => {
                     rows += "<tr>";
-                    rows += `<td>${e.name}</td> <td>${e.surname} </td> <td>${e.education != null ? e.education : '-'}</td> <td>${e.salary != null ? (e.salary / 100).toFixed(2) : '-'}</td> <td> <a href='/employee/${e.id}' class="btn btn-success">Plačiau</a></td>`;
+                    rows += `<td>${e.id}</td> <td>${e.name}</td> <td>${e.surname} </td> <td>${e.education != null ? e.education : '-'}</td> <td>${e.salary != null ? (e.salary / 100).toFixed(2) : '-'}</td> <td> <a href='/employee/${e.id}' class="btn btn-success">Plačiau</a></td>`;
                     rows += "</tr>";
                 });
                 let template = fs_1.default.readFileSync('templates/employees.html').toString();

@@ -62,7 +62,7 @@ con.connect((error:any)=>{
         let rows="";
         result.forEach((e)=>{
             rows+="<tr>";
-            rows+=`<td>${e.name}</td> <td>${e.surname} </td> <td>${e.education != null? e.education:'-'}</td> <td>${e.salary != null ? (e.salary / 100).toFixed(2) : '-'}</td> <td> <a href='/employee/${e.id}' class="btn btn-success">Plačiau</a></td>`;
+            rows+=`<td>${e.id}</td> <td>${e.name}</td> <td>${e.surname} </td> <td>${e.education != null? e.education:'-'}</td> <td>${e.salary != null ? (e.salary / 100).toFixed(2) : '-'}</td> <td> <a href='/employee/${e.id}' class="btn btn-success">Plačiau</a></td>`;
             rows+="</tr>";
 
         })
