@@ -1,0 +1,22 @@
+
+td {
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+th {
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid #ccc;
+}
+
+
