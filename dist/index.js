@@ -75,7 +75,7 @@ const server = http_1.default.createServer((req, res) => {
             let template = fs_1.default.readFileSync('templates/employee.html').toString();
             template = template.replace("{{ name }}", employee.name);
             template = template.replace("{{ surname }}", employee.surname);
-            template = template.replace("{{ gender}}", employee.gender != null ? employee.gender : '-');
+            template = template.replace("{{ gender }}", employee.gender != null ? employee.gender : '-');
             template = template.replace("{{ phone }}", employee.phone != null ? employee.phone : '-');
             template = template.replace("{{ birthday }}", employee.birthday != null ? employee.birthday.toLocaleDateString() : '-');
             template = template.replace("{{ education }}", employee.education != null ? employee.education : '-');
